@@ -34,7 +34,7 @@ async function sendEmailTelegram(event) {
         })
         
         if (response.ok) {
-            formSendResult.textContent = 'Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.';
+            formSendResult.textContent = 'Жалоба отпралена!';
             form.reset()
         } else {
             throw new Error(response.statusText);
@@ -42,7 +42,7 @@ async function sendEmailTelegram(event) {
 
     } catch (error) {
         console.error(error);
-        formSendResult.textContent = 'Анкета не отправлена! Попробуйте позже.';
+        formSendResult.textContent = 'Где-то ошибка, попробуй еще раз)';
         formSendResult.style.color = 'red';
 
     } finally {
