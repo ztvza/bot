@@ -9,12 +9,14 @@
 </head>
 <body>
         <form class="form" onsubmit="sendEmailTelegram(event)">
+            <h2 class="title">Bot</h2>
+            <p class="subtitle">Бот для отправки жалоб в компании Unistory</p>
             <div class="form__group">
                 <label for="name">Имя</label>
-                <input type="text" name="name" autocomplete="off" maxlength="50" required>
+                <input placeholder="На кого жалоба..." type="text" name="name" autocomplete="off" maxlength="50" required>
 
                 <label for="txt">Текст жалобы</label>
-                <input type="text" name="txt" autocomplete="off" maxlength="50" required>
+                <input placeholder="Текст жалобы..." type="text" name="txt" autocomplete="off" maxlength="250" required>
             </div>
             <div class="form__submit-block">
                 <div class="form__submit-button">
